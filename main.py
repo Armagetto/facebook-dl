@@ -34,3 +34,4 @@ else:
 mobile_page_text = requests.get('https://mbasic.facebook.com/watch?v=' + video_id, cookies=cookie).text
 
 download_file(find_between(mobile_page_text, '<a href="/video_redirect/?src=', 'aria-label'))
+
